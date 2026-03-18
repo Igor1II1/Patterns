@@ -1,0 +1,30 @@
+<!-- ========== Задание БЭМ #4 — Правильная вложенность ========== -->
+<!-- Уровень: 🟡 -->
+<!--
+  Исправь ошибки именования по БЭМ.
+
+  В коде ниже есть 5 ошибок. Найди и исправь.
+
+  📖 Раздел учебника: "Правила БЭМ" → notes/html-css/06-bem.md
+-->
+<!-- ================================================ -->
+
+<!-- Исправь код ниже: -->
+<div class="card">
+  <div class="card__header">
+    <h3 class="card__header__title">Заголовок</h3>
+  </div>
+  <div class="card__body">
+    <p class="card__body__text">Описание</p>
+    <img class="card__body__image" src="photo.jpg">
+  </div>
+  <button class="btn--primary">Купить</button>
+  <div class="sidebar card">
+    <p>Боковая панель влияет на карточку</p>
+  </div>
+</div>
+
+<style>
+  .sidebar .card { border: none; } /* зависимость блоков */
+  #card-1 { padding: 20px; } /* id в CSS */
+</style>

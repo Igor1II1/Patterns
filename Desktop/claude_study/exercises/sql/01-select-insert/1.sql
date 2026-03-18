@@ -1,0 +1,30 @@
+-- ==================================================
+-- Задание 1: CREATE TABLE — создание таблиц
+-- Уровень: 🟢 Лёгкий
+-- Тема: CREATE TABLE, типы данных
+-- Ссылка: notes/sql/01-select-insert.md — "CREATE TABLE"
+-- ==================================================
+--
+-- 1. Создай таблицу users:
+--    - id — SERIAL PRIMARY KEY
+--    - name — VARCHAR(100) NOT NULL
+--    - email — VARCHAR(255) UNIQUE NOT NULL
+--    - age — INTEGER
+--    - is_active — BOOLEAN DEFAULT true
+--    - created_at — TIMESTAMP DEFAULT NOW()
+--
+-- 2. Создай таблицу products:
+--    - id — SERIAL PRIMARY KEY
+--    - name — VARCHAR(200) NOT NULL
+--    - price — DECIMAL(10, 2) NOT NULL
+--    - description — TEXT
+--    - in_stock — BOOLEAN DEFAULT true
+--    - created_at — TIMESTAMP DEFAULT NOW()
+--
+-- 3. Создай таблицу categories:
+--    - id — SERIAL PRIMARY KEY
+--    - name — VARCHAR(100) NOT NULL
+--    - slug — VARCHAR(100) UNIQUE NOT NULL
+--
+-- Пиши SQL ниже:
+-- ==================================================

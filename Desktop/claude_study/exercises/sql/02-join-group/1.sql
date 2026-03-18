@@ -1,0 +1,29 @@
+-- ==================================================
+-- Задание 1: INNER JOIN
+-- Уровень: 🟢 Лёгкий
+-- Тема: INNER JOIN — связывание таблиц
+-- Ссылка: notes/sql/02-join-group.md — "INNER JOIN"
+-- ==================================================
+--
+-- Используя таблицы из задания 6 (01-select-insert):
+-- products (с category_id) и categories
+-- orders (с customer_id) и customers
+--
+-- 1. Выбери все товары с названием категории:
+--    SELECT p.name, p.price, c.name AS category
+--    FROM products p
+--    INNER JOIN categories c ON p.category_id = c.id;
+--
+-- 2. Выбери все заказы с именем клиента:
+--    SELECT o.id, o.total_price, o.status, cu.name AS customer_name
+--    FROM orders o
+--    INNER JOIN customers cu ON o.customer_id = cu.id;
+--
+-- 3. Выбери товары из категории "Электроника":
+--    INNER JOIN + WHERE c.slug = 'electronics'
+--
+-- 4. Выбери заказы клиента "Игорь" со статусом 'paid':
+--    INNER JOIN + WHERE
+--
+-- Пиши SQL ниже:
+-- ==================================================

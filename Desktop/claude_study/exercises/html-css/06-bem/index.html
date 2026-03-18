@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Упражнения: БЭМ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  УПРАЖНЕНИЯ: БЭМ
+  Где смотреть: notes/html-css/06-bem.md
+-->
+
+<!--
+  ЗАДАНИЕ 1 🟢: Переименовать классы по БЭМ
+  Ниже — код без БЭМ. Переименуй все классы по методологии.
+  Создай соответствующие стили в style.css
+-->
+
+<!-- ДО: -->
+<div class="card-wrapper">
+  <div class="card-image-container">
+    <img class="card-img" src="" alt="Обложка">
+    <span class="new-label">Новинка</span>
+  </div>
+  <div class="card-info-area">
+    <h3 class="title">Название книги</h3>
+    <p class="author-name">Автор</p>
+    <div class="card-buttons-area">
+      <button class="primary-btn">В библиотеку</button>
+      <button class="secondary-btn">Подробнее</button>
+    </div>
+  </div>
+</div>
+
+
+<!--
+  ЗАДАНИЕ 2 🟡: Написать компонент кнопки по БЭМ
+  Нужны кнопки:
+  - Обычная
+  - Первичная (синяя)
+  - Опасная (красная)
+  - Большая
+  - Отключённая
+  Одна и та же база, только модификаторы меняют вид.
+-->
+<div class="button-demo">
+  <!-- TODO: добавить правильные БЭМ классы -->
+  <button class="">Обычная</button>
+  <button class="">Первичная</button>
+  <button class="">Опасная</button>
+  <button class="">Большая</button>
+  <button class="" disabled>Отключена</button>
+</div>
+
+
+<!--
+  ЗАДАНИЕ 3 🟡: Навигация по БЭМ
+  Компонент nav с:
+  - лого (блок)
+  - список ссылок (элемент)
+  - активная ссылка (модификатор --active)
+  - мобильное меню открыто (модификатор блока --open)
+-->
+<nav class="">
+  <a class="" href="/">Лого</a>
+  <ul class="">
+    <li class=""><a href="/">Главная</a></li>
+    <li class=""><a href="/books">Книги</a></li>  <!-- активная -->
+    <li class=""><a href="/about">О нас</a></li>
+  </ul>
+</nav>
+
+
+<!--
+  ЗАДАНИЕ 4 🔴: Список книг полностью по БЭМ
+  Структура:
+  - Блок book-list
+  - Элемент book-list__item
+  - Каждый item содержит card (отдельный блок)
+  - Карточка с модификатором --featured для выделенных
+
+  Придумай и реализуй структуру самостоятельно.
+  Напиши и HTML и CSS.
+-->
+
+
+</body>
+</html>

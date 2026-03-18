@@ -1,0 +1,36 @@
+-- ==================================================
+-- Задание 2: Ограничения (Constraints)
+-- Уровень: 🟡 Средний
+-- Тема: PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, NOT NULL
+-- Ссылка: notes/sql/03-postgresql.md — "Ограничения"
+-- ==================================================
+--
+-- 1. Создай таблицу users с ограничениями:
+--    - id: PRIMARY KEY
+--    - email: UNIQUE NOT NULL
+--    - age: CHECK (age >= 0 AND age <= 150)
+--    - name: NOT NULL
+--
+-- 2. Создай таблицу posts с FOREIGN KEY:
+--    - id: PRIMARY KEY
+--    - title: NOT NULL
+--    - author_id: REFERENCES users(id)
+--    Что произойдёт при удалении пользователя? (напиши в комментарии)
+--
+-- 3. Создай таблицу posts с ON DELETE CASCADE:
+--    author_id INTEGER REFERENCES users(id) ON DELETE CASCADE
+--    Теперь при удалении пользователя удалятся и его посты.
+--
+-- 4. Создай таблицу orders с ON DELETE SET NULL:
+--    customer_id INTEGER REFERENCES customers(id) ON DELETE SET NULL
+--
+-- 5. Попробуй вставить данные, нарушающие ограничения:
+--    a) Дублирующий email → ОШИБКА
+--    b) age = -5 → ОШИБКА (CHECK)
+--    c) author_id = 999 (несуществующий) → ОШИБКА (FOREIGN KEY)
+--
+-- 6. Напиши в комментарии: зачем нужны ограничения?
+--    Чем ON DELETE CASCADE отличается от SET NULL и RESTRICT?
+--
+-- Пиши SQL ниже:
+-- ==================================================

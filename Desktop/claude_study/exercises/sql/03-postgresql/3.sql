@@ -1,0 +1,36 @@
+-- ==================================================
+-- Задание 3: ALTER TABLE — изменение структуры
+-- Уровень: 🟡 Средний
+-- Тема: ALTER TABLE, ADD/DROP/RENAME COLUMN
+-- Ссылка: notes/sql/03-postgresql.md — "ALTER TABLE"
+-- ==================================================
+--
+-- 1. Добавь колонку phone в таблицу users:
+--    ALTER TABLE users ADD COLUMN phone VARCHAR(20);
+--
+-- 2. Добавь колонку с default значением:
+--    ALTER TABLE users ADD COLUMN role VARCHAR(20) DEFAULT 'user';
+--
+-- 3. Удали колонку:
+--    ALTER TABLE users DROP COLUMN phone;
+--
+-- 4. Переименуй колонку:
+--    ALTER TABLE users RENAME COLUMN name TO full_name;
+--
+-- 5. Измени тип колонки:
+--    ALTER TABLE users ALTER COLUMN age TYPE SMALLINT;
+--
+-- 6. Добавь ограничение NOT NULL к существующей колонке:
+--    ALTER TABLE users ALTER COLUMN email SET NOT NULL;
+--
+-- 7. Добавь UNIQUE constraint:
+--    ALTER TABLE users ADD CONSTRAINT users_email_unique UNIQUE (email);
+--
+-- 8. Удали constraint:
+--    ALTER TABLE users DROP CONSTRAINT users_email_unique;
+--
+-- 9. Переименуй таблицу:
+--    ALTER TABLE users RENAME TO app_users;
+--
+-- Пиши SQL ниже:
+-- ==================================================

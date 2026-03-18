@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Упражнения: HTML5</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .task { border: 1px solid #ddd; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<!--
+  УПРАЖНЕНИЯ: HTML5 семантика и формы
+  Где смотреть: notes/html-css/01-html5.md
+
+  ЗАДАНИЕ 1 🟢: Заменить все <div> на семантические теги
+  В коде ниже — только div. Замени на: header, nav, main, article, aside, footer
+-->
+
+<div class="page">
+  <div class="top">
+    <div class="logo">Моя Библиотека</div>
+    <div class="menu">
+      <a href="/">Главная</a>
+      <a href="/books">Книги</a>
+      <a href="/about">О нас</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="main-content">
+      <div class="post">
+        <div class="post-title">Лучшие книги 2025 года</div>
+        <div class="post-text">Список рекомендованных книг...</div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="widget">Последние добавления</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="copyright">© 2026 Моя Библиотека</div>
+  </div>
+</div>
+
+
+<!--
+  ЗАДАНИЕ 2 🟢: Форма добавления книги
+  Создай форму со следующими полями:
+  - Название книги (text, обязательное, min 2 символа)
+  - Автор (text, обязательное)
+  - Год издания (number, от 1000 до 2026)
+  - Жанр (select: Художественная / Техническая / Научная / Другое)
+  - Статус (radio: Хочу прочитать / Читаю / Прочитал)
+  - Оценка (range от 1 до 10, показывать текущее значение)
+  - Заметки (textarea)
+  - Кнопки: Добавить (submit) и Сбросить (reset)
+
+  Каждый input должен иметь связанный label через for/id
+-->
+
+<!-- ТВОЯ ФОРМА ЗДЕСЬ -->
+
+
+<!--
+  ЗАДАНИЕ 3 🟡: Список книг
+  Создай семантический список книг.
+  Каждая книга — это <article> с:
+  - <figure> + <img> (обложка) + <figcaption> (автор)
+  - <h2> (название)
+  - <time datetime="..."> (год)
+  - <p> (описание)
+  - <a> (ссылка "Подробнее")
+
+  Сделай минимум 3 книги.
+-->
+
+<!-- ТВОЙ СПИСОК ЗДЕСЬ -->
+
+
+</body>
+</html>

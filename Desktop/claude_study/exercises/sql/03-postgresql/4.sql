@@ -1,0 +1,36 @@
+-- ==================================================
+-- Задание 4: Индексы и производительность
+-- Уровень: 🟡 Средний
+-- Тема: CREATE INDEX, EXPLAIN ANALYZE
+-- Ссылка: notes/sql/03-postgresql.md — "Индексы", "EXPLAIN"
+-- ==================================================
+--
+-- 1. Создай индекс на поле email таблицы users:
+--    CREATE INDEX idx_users_email ON users(email);
+--
+-- 2. Создай составной индекс на category_id и price в products:
+--    CREATE INDEX idx_products_category_price ON products(category_id, price);
+--
+-- 3. Создай уникальный индекс:
+--    CREATE UNIQUE INDEX idx_users_email_unique ON users(email);
+--
+-- 4. Используй EXPLAIN ANALYZE для анализа запроса:
+--    EXPLAIN ANALYZE SELECT * FROM users WHERE email = 'igor@mail.ru';
+--    Напиши в комментарии: что показывает EXPLAIN?
+--    (Seq Scan vs Index Scan, cost, actual time)
+--
+-- 5. Сравни запрос до и после индекса:
+--    a) EXPLAIN ANALYZE SELECT * FROM products WHERE category_id = 1;
+--    b) CREATE INDEX idx_products_category ON products(category_id);
+--    c) EXPLAIN ANALYZE SELECT * FROM products WHERE category_id = 1;
+--
+-- 6. Удали индекс:
+--    DROP INDEX idx_users_email;
+--
+-- 7. Напиши в комментарии:
+--    - Зачем нужны индексы?
+--    - Когда индексы вредят? (медленнее INSERT/UPDATE)
+--    - Какие поля индексировать? (WHERE, JOIN, ORDER BY)
+--
+-- Пиши SQL ниже:
+-- ==================================================

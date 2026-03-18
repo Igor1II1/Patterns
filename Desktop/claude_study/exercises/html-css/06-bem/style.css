@@ -1,0 +1,24 @@
+/* Сброс */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; padding: 2rem; display: flex; flex-direction: column; gap: 3rem; }
+
+/* ЗАДАНИЕ 1: Карточка по БЭМ */
+/* TODO: напиши стили с правильными БЭМ-классами */
+
+
+/* ЗАДАНИЕ 2: Кнопка по БЭМ */
+/* Базовый класс .btn — общие стили */
+.btn {
+  /* TODO: базовые стили кнопки */
+}
+
+/* Модификаторы */
+/* TODO: .btn--primary, .btn--danger, .btn--large */
+
+
+/* ЗАДАНИЕ 3: Навигация по БЭМ */
+/* TODO: стили для nav-компонента */
+
+
+/* ЗАДАНИЕ 4: Список книг по БЭМ */
+/* TODO: стили для book-list и card */
